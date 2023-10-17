@@ -20,16 +20,12 @@ body {
     display: none;
 }*/
 
-.box {
+.search-area {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    min-width: 14rem;
-    max-width: 14rem;
-}
-
-.search-area {
-    gap: 1rem;
+    align-items: center;
+    gap: 5px;
+    width: 20rem;
 }
 
 form {
@@ -73,14 +69,128 @@ form {
 
 .weather-container {
     display: flex;
-    gap: 1rem;
-    overflow-x: scroll;
-    overflow-y: hidden;
     height: 18rem;
     width: 96%;
 }
 
-.weather-info {
+.current-weather-container {
+    height: 100%;
+    width: 32%;
+}
+
+.period {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.current-weather {
+    align-items: center;
+    display: flex;
+    border-style: solid;
+    border-color: #10110f;
+    border-width: 1px;
+    border-radius: 5px;
+    height: 14rem;
+    padding: 1rem 1rem;
+    min-width: 23rem;
+    max-width: 23rem;
+}
+
+.weather-update {
+    border-width: 1px;
+    border-style: dashed;
+    border-color: #10110f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.days {
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #10110f;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #10110f;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.time {
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #10110f;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.temp {
+    display: flex;
+    justify-content: space-around;
+    font-style: oblique;
+    font-weight: bold;
+    color: #10110f;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.weather-icon {
+    padding: 5px 0;
+    width: 4rem;
+}
+
+.weather-msg {
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.data-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    height: 100%;
+    width: 60%; 
+}
+
+.other-condition-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 10%;
+    width: 90%;
+}
+
+.condition-icon {
+    width: 1rem;
+}
+
+.forecast-weather-container {
+    height: 100%;
+    width: 68%;
+}
+
+.hourly-forecast {
+    display: flex;
+    gap: 1rem;
+    height: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+}
+
+.forecast-weather {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     gap: 1rem;
     border-style: solid;
@@ -89,10 +199,8 @@ form {
     border-radius: 5px;
     height: 14rem;
     padding: 1rem 0;
-}
-
-.weather-icon {
-    width: 5rem;
+    min-width: 14rem;
+    max-width: 14rem;
 }
 
 .box-shadow {

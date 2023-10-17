@@ -66,12 +66,17 @@ async function fectchResult(target) {
     const res = await fetch(url);
     const data = await res.json();
 
+    
     document.querySelector(".location").innerHTML = data.location.name;
     document.querySelector(".time").innerHTML = data.location.localtime;
     document.querySelector(".weather-icon").src = "http:" + data.current.condition.icon;
     document.querySelector(".weather-msg").innerHTML = data.current.condition.text;
     document.querySelector(".temp-f").innerHTML = data.current.temp_f + "°F";
     document.querySelector(".temp-c").innerHTML = data.current.temp_c + "°C";
+    document.querySelector(".cloud").innerHTML = data.current.cloud;
+    document.querySelector(".pressure").innerHTML = "Pressure: " + data.current.pressure_mb + " Mb";
+    document.querySelector(".humidity").innerHTML = "Humidity: " + data.current.humidity + " %";
+    document.querySelector(".wind").innerHTML = "Wind: " + data.current.wind_kph + " Km/H";
 
     console.log(data);
 }
