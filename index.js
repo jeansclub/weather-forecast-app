@@ -104,31 +104,6 @@ async function fectchResult(target) {
         document.querySelectorAll(".forecast-temp-c")[index].innerText = data.forecast.forecastday[0].hour[index].temp_c + "°C";
     }
 
-    console.log(data);
 }
 
 fectchResult(weatherLocation);
-
-/*function weatherForecast() {
-    for (let index = 0; index < document.querySelectorAll(".forecast-temp-c").length; index++) {
-        document.querySelectorAll(".forecast-temp-c")[index].innerText = index;
-        
-    }
-
-    console.log(index);
-}
-
-weatherForecast();*/
-
-
-/*async function forecastResult(result) {
-    const forCastUrl = "http://api.weatherapi.com/v1/forecast.json?key=9b99f40c7b0341bcbe0211219232509&q="+target+"&days=1&aqi=no&alerts=no";
-    const respond = await fetch(forCastUrl);
-    const forecastData = await respond.json();
-
-    console.log(forecastData);
-} 
-
-forecastResult(weatherLocation)*/
-
-//http://api.weatherapi.com/v1/current.json?key=9b99f40c7b0341bcbe0211219232509&q="+target+"&aqi=no"
