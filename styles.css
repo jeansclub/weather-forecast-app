@@ -63,8 +63,9 @@ form {
 .location {
     font-style: oblique;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #10110f;
+    margin-top: 1rem;
 }
 
 .weather-container {
@@ -80,7 +81,8 @@ form {
 
 .period {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
     text-align: center;
     width: 100%;
 }
