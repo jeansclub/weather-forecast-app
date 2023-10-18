@@ -208,3 +208,50 @@ form {
 .box-shadow {
     box-shadow: 0 0 10px 4px #27301e;
 }
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    * {
+        font-size: 0.9rem;
+    }
+
+    body {
+        justify-content: start;
+        gap: 5vh;
+    }
+
+    .search-area {
+        margin-top: 1rem;
+    }
+
+    .weather-container {
+        display: block;
+        height: 18rem;
+    }
+
+    .current-weather-container {
+        width: 100%;
+    }
+
+    .current-weather {
+        height: 12rem;
+        margin: 0 auto;
+        min-width: 21rem;
+        max-width: 21rem;
+    }
+
+    .forecast-weather-container {
+        width: 100%;
+    }
+
+    .forecast-weather {
+        height: 12rem;
+        min-width: 12rem;
+        max-width: 12rem;
+    }
+}
