@@ -63,15 +63,15 @@ function valueTest() {
 //-----------------------------------------------------------------------------------------------
 
 async function fectchResult(target) {
-    
-    const url = "http://api.weatherapi.com/v1/forecast.json?key=9b99f40c7b0341bcbe0211219232509&q="+target+"&days=1&aqi=no&alerts=no";
+    //https://api.weatherapi.com/v1/forecast.json?key=9b99f40c7b0341bcbe0211219232509&q=London&days=1&aqi=no&alerts=no
+    const url = "https://api.weatherapi.com/v1/forecast.json?key=9b99f40c7b0341bcbe0211219232509&q="+target+"&days=1&aqi=no&alerts=no";
     const res = await fetch(url);
     const data = await res.json();
 
     
     document.querySelector(".city").innerHTML = data.location.name + ", ";
     document.querySelector(".time").innerHTML = data.location.localtime;
-    document.querySelector(".weather-icon").src = "http:" + data.current.condition.icon;
+    document.querySelector(".weather-icon").src = "https:" + data.current.condition.icon;
     document.querySelector(".weather-msg").innerHTML = data.current.condition.text;
     document.querySelector(".temp-f").innerHTML = data.current.temp_f + "°F";
     document.querySelector(".temp-c").innerHTML = data.current.temp_c + "°C";
