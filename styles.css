@@ -1,12 +1,12 @@
 * {
-    color: #10110f;
+    color: #053649;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: darkolivegreen;
+    background-color: skyblue;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -34,35 +34,36 @@ form {
 }
 
 #search-location {
-    background-color: #5a8b04;
+    background-color: #10aeec;
     height: 1.5rem;
     border-style: solid;
-    border-color: #0d1401;
+    border-color: #053649;
     border-width: 1px;
     outline: none;
     border-radius: 5px;
+    padding: 0 1%;
+    width: 98%;
 }
 
 #submit-btn {
     border-style: none;
     border-radius: 5px;
     padding: 0.2rem 0;
-    color: #5a8b04;
-    background-color: #10110f; 
+    color: skyblue;
+    background-color: blue; 
     transition-duration: 300ms;   
 }
 
 #submit-btn:hover {
-    background-color: #5a8b04;
+    background-color: #0b6c92;
     cursor: pointer;
-    color: #10110f;
 }
 
 .location {
     font-style: oblique;
     font-weight: bold;
     font-size: 1.5rem;
-    color: #10110f;
+    color: #0b6c92;
     margin-top: 1rem;
 }
 
@@ -87,7 +88,7 @@ form {
     align-items: center;
     display: flex;
     border-style: solid;
-    border-color: #10110f;
+    border-color: #053649;
     border-width: 1px;
     border-radius: 5px;
     height: 14rem;
@@ -99,7 +100,7 @@ form {
 .weather-update {
     border-width: 1px;
     border-style: dashed;
-    border-color: #10110f;
+    border-color: #053649;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,11 +111,11 @@ form {
 .days {
     border-bottom-width: 1px;
     border-bottom-style: dashed;
-    border-bottom-color: #10110f;
+    border-bottom-color: #053649;
     font-style: oblique;
     font-weight: bold;
     font-size: 1.2rem;
-    color: #10110f;
+    color: #053649;
     padding: 5px 0;
     text-align: center;
     width: 100%;
@@ -123,7 +124,7 @@ form {
 .time {
     border-bottom-width: 1px;
     border-bottom-style: dashed;
-    border-bottom-color: #10110f;
+    border-bottom-color: #053649;
     padding: 5px 0;
     text-align: center;
     width: 100%;
@@ -134,7 +135,7 @@ form {
     justify-content: space-around;
     font-style: oblique;
     font-weight: bold;
-    color: #10110f;
+    color: #053649;
     padding: 5px 0;
     text-align: center;
     width: 100%;
@@ -191,7 +192,7 @@ form {
     justify-content: center;
     gap: 0.5rem;
     border-style: solid;
-    border-color: #10110f;
+    border-color: #053649;
     border-width: 1px;
     border-radius: 5px;
     height: 14rem;
@@ -200,7 +201,7 @@ form {
 }
 
 .box-shadow {
-    box-shadow: 0 0 10px 4px #27301e;
+    box-shadow: 0 0 10px 4px #053649;
 }
 
 
